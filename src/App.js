@@ -19,7 +19,7 @@ function App() {
         </h1>
         <hr/>
         <Routes>
-          <Route path="/artist_list" element={<ArtistList />}/>
+          <Route path="/artist_list" element={<ArtistList sort="name"/>}/>
           <Route path="/cd_list" element={<CdList/>} />
           <Route path="/track_list" element={<TrackList/>} />
         </Routes>
