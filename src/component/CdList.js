@@ -5,7 +5,7 @@ export default function ArtistList(){
     const [cdList, setCdList] = useState([]);
 
     useEffect(() => {
-        axios.get("/cds?page=0&size=10",
+        axios.get("/cds??projection=cdDetails",
         {
             mode: "no-cors",
         })
@@ -20,9 +20,9 @@ export default function ArtistList(){
                 <table>
                     <thead>
                         <tr>
-                            <th>TITLE</th>
-                            <th>YEAR</th>
-                            <th>ARTIST</th>
+                            <th>TITLE ▼</th>
+                            <th>YEAR ▼</th>
+                            <th>ARTIST ▼</th>
                         </tr>
                     </thead>
                     <tbody>
